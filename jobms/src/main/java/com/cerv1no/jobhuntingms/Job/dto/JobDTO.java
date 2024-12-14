@@ -1,0 +1,25 @@
+package com.cerv1no.jobhuntingms.Job.dto;
+
+import com.cerv1no.jobhuntingms.Job.external.Company;
+import com.cerv1no.jobhuntingms.Job.external.Review;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.math.BigDecimal;
+import java.util.List;
+
+@Getter
+@Setter
+@NoArgsConstructor
+public class JobDTO {
+
+    private Long id;
+    private String title;
+    private String description;
+    private BigDecimal minSalary;
+    private BigDecimal maxSalary;
+    private String location;
+    private Company company;
+    private List<Review> reviews;
+}
